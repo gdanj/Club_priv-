@@ -1,0 +1,17 @@
+
+
+
+<% if logged_in? %>
+<% User.all.each do |user| %>
+<h1>Liste des user</h1>
+<br>
+
+  <h2><%= user.prenom %></h2>
+  <h2><%= user.nom %></h2>
+  <h2><%= user.email %></h2>
+  <br><br>
+<% end %>
+
+ <% else %>
+  <h2>Cette page est accessible uniquement aux utilisateurs connectés</h2>
+  <% end %>

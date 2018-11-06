@@ -1,0 +1,12 @@
+<% if logged_in? %>
+<h1>Information personnel</h1>
+<br>
+
+  <h2><%= current_user.prenom %></h2>
+  <h2><%= current_user.nom %></h2>
+  <h2><%= current_user.email %></h2>
+  <br><br>
+
+ <% else %>
+  <h2>Cette page est accessible uniquement aux utilisateurs connectés</h2>
+  <% end %>

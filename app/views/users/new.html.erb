@@ -1,0 +1,16 @@
+<h1>Bienvenue !</h1>
+
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+<%= form_for @user, url: {action: "create"} do |f| %>
+  <%= render 'shared/error_messages' %>
+
+	<%= f.text_field :nom, autofocus: true, placeholder: 'Nom', class: 'form-control' %>
+	<%= f.text_field :prenom, autofocus: true, placeholder: 'prenom', class: 'form-control' %> <br><br><br>
+	<%= f.text_field :email, autofocus: true, placeholder: 'Example@ex.com', class: 'form-control' %> <br><br><br>
+	<%= f.password_field :password, autofocus: true, placeholder: 'Password', class: 'form-control'  %>
+	<%= f.submit "Create", class: "btn btn-primary" %>
+<% end %>
+  </div>
+</div>
