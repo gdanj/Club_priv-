@@ -1,24 +1,22 @@
-# README
+# ![CI status](http://oi68.tinypic.com/ngf2uo.jpg)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Club_priv
+Club_priv is an app where you can add Courses and Students
 
-Things you may want to cover:
+### Prerequisites
 
-* Ruby version
+Ruby on your machine :)
 
-* System dependencies
+### Installing
 
-* Configuration
+`git clone`  this repo
 
-* Database creation
+```
+bundle install
+```
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Built With
 
-* Deployment instructions
-
-* ...
+* [Rails](https://rubyonrails.org/) - The web framework used
